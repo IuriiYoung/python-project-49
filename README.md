@@ -3,3 +3,6 @@
 
 ### Acsiinema recordongs of how to install and play brain-even game
 https://asciinema.org/a/W2EDU6z71FYSCNlKGzUJ0ctkz
+
+### Acsiinema recordongs of how to play brain-calc game
+https://asciinema.org/a/VHXYBwIJN9fx9ifJwZH8UnjU5

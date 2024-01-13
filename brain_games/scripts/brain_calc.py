@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 
-def start_even():
-    from games.game_even import game
+def start_calc():
+    from games.game_calc import game
     from brain_games.game_seq import procedure
-    procedure(2)
+    procedure(1)
 
 def main():
-    start_even()
+    start_calc()
 
 if __name__ == '__main__':
     main()
+
