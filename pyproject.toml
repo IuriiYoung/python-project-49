@@ -9,7 +9,7 @@ packages = [
 ]
 
 [repository]
-https://github.com/IuriiYoung/python-project-49.git
+"https://github.com/IuriiYoung/python-project-49.git"
 
 [tool.poetry.dependencies]
 python = "^3.10"
