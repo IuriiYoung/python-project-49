@@ -12,3 +12,6 @@ https://asciinema.org/a/IvTvrvEf8Y0QnXlVWcsvWfQqN
 
 ### Acsiinema recordongs of how to play brain-progression game
 https://asciinema.org/a/x305uSiHRrlEbRcNvmQmyBTbq
+
+### Acsiinema recordongs of how to play brain-prime game
+https://asciinema.org/a/PQpbqpmcPhyaKNYNZ8FmCZec5
