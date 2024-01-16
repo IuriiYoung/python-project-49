@@ -1,12 +1,15 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Learning project with games"
 authors = ["IuriiYoung <yura.young2002@gmail.com>"]
 packages = [
   { include = "brain_games" },
   { include = "games" },
 ]
+
+[repository]
+https://github.com/IuriiYoung/python-project-49.git
 
 [tool.poetry.dependencies]
 python = "^3.10"
