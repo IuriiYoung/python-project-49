@@ -11,6 +11,8 @@ def procedure(game_num: int):
         from games.game_even import game
     elif game_num == 3:
         from games.game_gsd import game
+    elif game_num == 4:
+        from games.game_progression import game
     else:
         print('wrong game type')
     while count < 4:

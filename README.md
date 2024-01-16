@@ -9,3 +9,6 @@ https://asciinema.org/a/VHXYBwIJN9fx9ifJwZH8UnjU5
 
 ### Acsiinema recordongs of how to play brain-gsd game
 https://asciinema.org/a/IvTvrvEf8Y0QnXlVWcsvWfQqN
+
+### Acsiinema recordongs of how to play brain-progression game
+https://asciinema.org/a/x305uSiHRrlEbRcNvmQmyBTbq
