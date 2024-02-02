@@ -14,7 +14,7 @@ def play_game(game_name):
         elif chosen_game.play() == True:
             count = count + 1
         else:
-            print(f"Let's try again {name}!")
+            print(f"Let's try again, {name}!")
             break
 
 def main():
