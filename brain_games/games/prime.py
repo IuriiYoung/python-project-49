@@ -2,16 +2,16 @@ def create_game():
     import random
     num_1 = random.randint(1, 100)  # create number
     k = 2
-    while k < num_1:
-        if num_1 == 1 or num_1 == 2:
-            num_check = True
-            break
-        elif num_1 % k == 0:
-            num_check = False
-            break
-        else:
-            num_check = True
-            k = k + 1
+    if num_1 == 1 or num_1 == 2:
+        num_check = True
+    else:
+        while k < num_1:
+            if num_1 % k == 0:
+                num_check = False
+                break
+            else:
+                num_check = True
+                k = k + 1
     data_1 = num_1, num_check
     return data_1
 
@@ -33,10 +33,10 @@ def evaluate_answer(data_2):
         print('Correct!')
         return True
     elif data_2[0] is True and data_2[1] == 'no':  # incorrect answer even
-        print('"no" is wrong answer ;(. Correct answer was "yes"')
+        print('"no" is wrong answer ;(. Correct answer was "yes".')
         return False
     elif data_2[0] is False and data_2[1] == 'yes':  # incorrect answer not even
-        print('"yes" is wrong answer ;(. Correct answer was "no"')
+        print('"yes" is wrong answer ;(. Correct answer was "no".')
         return False
     else:
         return False
