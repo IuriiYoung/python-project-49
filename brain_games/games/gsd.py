@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-def create_game():
+def create_game_1():
     import random
     num_1 = random.randint(1, 100)  # create number
     num1_list = []  # create 1-st list of dividers
@@ -20,9 +20,16 @@ def create_game():
             div = div - 1
         else:
             div = div - 1
+    data_1_1 = num1_list, num2_list
+    return data_1_1
+
+
+def create_game(data_1_1):
     number = 0  # create list of equal diveders
     div_list = []
-    while number < len(num2_list):
+    num1_list = data_1_1[0]
+    num2_list = data_1_1[1]
+    while number < len(data_1_1[1]):
         for item in num1_list:
             if item == num2_list[number]:
                 div_list.append(item)
@@ -30,7 +37,7 @@ def create_game():
                 continue
         number = number + 1
     num_3 = div_list[0]  # pick up the hihgest divider
-    data_1 = (num_1, num_2, num_3)
+    data_1 = (num1_list[0], num2_list[0], num_3)
     return data_1
 
 
@@ -53,16 +60,19 @@ def evaluate_answer(data_2):
 
 
 def play():
-    data_1 = create_game()
+    data_1_1 = create_game_1()
+    data_1 = create_game(data_1_1)
     data_2 = create_question(data_1)
     data_3 = evaluate_answer(data_2)
     return data_3
 
 
 def main():
-    data_1 = create_game()
+    data_1_1 = create_game_1()
+    data_1 = create_game(data_1_1)
     data_2 = create_question(data_1)
     evaluate_answer(data_2)
+
 
 if __name__ == '__main__':
     main()

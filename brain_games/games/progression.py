@@ -9,7 +9,7 @@ def create_game():
         progres.append(num_1 + num_2)
         num_4 = num_4 + 1
         num_1 = num_1 + num_2
-    num_5 = random.randint(0, (len(progres) - 1))  # define the number for excluding
+    num_5 = random.randint(0, (len(progres) - 1))  # define number for excluding
     num_6 = progres[num_5]  # define the value of the excluded number
     progres.pop(num_5)  # exclude the number
     progres.insert(num_5, '..')  # insert the dots
@@ -39,6 +39,7 @@ def evaluate_answer(data_2):
         print(data_2[0], 'is wrong answer ;(. Correct answer was', data_2[1])
         return False
 
+
 def play():
     data_1 = create_game()
     data_2 = create_question(data_1)
@@ -51,9 +52,6 @@ def main():
     data_2 = create_question(data_1)
     evaluate_answer(data_2)
 
+
 if __name__ == '__main__':
     main()
-
-
-
-

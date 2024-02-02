@@ -2,7 +2,7 @@
 
 def start_calc():
     from brain_games.game_seq import play_game
-    play_game ('calc')
+    play_game('calc')
 
 
 def main():

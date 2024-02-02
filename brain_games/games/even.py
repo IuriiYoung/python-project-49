@@ -4,19 +4,21 @@ def create_game():
     data_1 = ran_num
     return data_1
 
+
 def create_question(data_1):
     import prompt
     print('Answer "yes" if the number is even, otherwise answer "no".')
     print('Question: ' + str(data_1))  # request + created number
-    player_ans = prompt.string('Your answer: ')  # just string + player inputs number
+    player_ans = prompt.string('Your answer: ')  # player inputs number
     data_2 = (player_ans, data_1)
     return data_2
 
+
 def evaluate_answer(data_2):
-    if data_2[1] % 2 == 0 and data_2[0] == 'yes':  # count right answers even
+    if data_2[1] % 2 == 0 and data_2[0] == 'yes':  # right answers even
         print('Correct!')
         return True
-    elif data_2[1] % 2 == 1 and data_2[0] == 'no':  # count right answers not even
+    elif data_2[1] % 2 == 1 and data_2[0] == 'no':  # right answers not even
         print('Correct!')
         return True
     elif data_2[1] % 2 == 0 and data_2[0] == 'no':  # incorrect answer even
@@ -40,6 +42,7 @@ def main():
     data_1 = create_game()
     data_2 = create_question(data_1)
     evaluate_answer(data_2)
+
 
 if __name__ == '__main__':
     main()

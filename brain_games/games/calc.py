@@ -22,17 +22,19 @@ def create_question(data1):
 
 def evaluate_answer(data2):
     if data2[0] == data2[1]:
-        print ('Correct!')
+        print('Correct!')
         return True
     else:
-        print (data2[0], 'is wrong answer ;(. Correct answer was', data2[1])
+        print(data2[0], 'is wrong answer ;(. Correct answer was', data2[1])
         return False
+
 
 def play():
     data1 = create_game()
     data2 = create_question(data1)
     data3 = evaluate_answer(data2)
     return data3
+
 
 def main():
     data1 = create_game()

@@ -11,17 +11,16 @@ def play_game(game_name):
         if count == 3:
             print(f'Congratulations, {name}!')
             break
-        elif chosen_game.play() == True:
+        elif chosen_game.play() is True:
             count = count + 1
         else:
             print(f"Let's try again, {name}!")
             break
 
+
 def main():
-    play_game(game_name)
+    play_game()
 
 
 if __name__ == '__main__':
     main()
-
-
