@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 def create_game():
-    import prompt
     import random
     num_1 = random.randint(1, 100)  # create number
     num1_list = []  # create 1-st list of dividers
@@ -31,7 +30,7 @@ def create_game():
                 continue
         number = number + 1
     num_3 = div_list[0]  # pick up the hihgest divider
-    data_1 = (num_1, num_3, num_3)
+    data_1 = (num_1, num_2, num_3)
     return data_1
 
 
