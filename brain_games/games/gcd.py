@@ -43,7 +43,7 @@ def create_game(data_1_1):
 
 def create_question(data_1):
     import prompt
-    print('Find the greatest common divisor of given numbers')
+    print('Find the greatest common divisor of given numbers.')
     print('Question:', data_1[0], data_1[1])
     player_ans = prompt.integer('Your answer: ')
     data_2 = (data_1[2], player_ans)
