@@ -7,7 +7,7 @@ def create_game():
 def create_question(data_1):
     import prompt
     print('Answer "yes" if the number is even, otherwise answer "no"')
-    print('Question:' + str(data_1))  # request + created number
+    print('Question: ' + str(data_1))  # request + created number
     player_ans = prompt.string('Your answer: ')  # just string + player inputs number
     data_2 = (player_ans, data_1)
     return data_2
