@@ -25,7 +25,7 @@ def create_game():
 def create_question(data_1):
     import prompt
     print('What number is missing in the progression?')
-    print('Question:', data_1[0])
+    print('Question:' + str(data_1[0]))
     player_answer = prompt.integer('Your answer: ')
     data_2 = player_answer, data_1[1]
     return data_2
