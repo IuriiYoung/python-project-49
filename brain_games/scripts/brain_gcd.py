@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 
-def start_gsd():
+def start_gcd():
     from brain_games.game_seq import play_game
-    play_game('gsd')
+    play_game('gcd')
 
 
 def main():
-    start_gsd()
+    start_gcd()
 
 
 if __name__ == '__main__':
