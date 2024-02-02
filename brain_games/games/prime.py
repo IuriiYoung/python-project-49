@@ -18,8 +18,8 @@ def create_game():
 
 def create_question(data_1):
     import prompt
-    print('Answer "yes" if given number is prime, otherwise answer "no"')
-    print('Question ', data_1[0])  # request + created number
+    print('Answer "yes" if given number is prime, otherwise answer "no".')
+    print('Question ' + str(data_1[0]))  # request + created number
     player_answer = prompt.string('Your answer: ')  # player inputs number
     data_2 = data_1[1], player_answer
     return data_2
