@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 def start_calc():
-    from brain_games.game_seq import procedure
-    procedure(1)
+    from brain_games.game_seq import play_game
+    play_game ('calc')
 
 
 def main():

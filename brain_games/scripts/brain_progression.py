@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 def start_progression():
-    from brain_games.game_seq import procedure
-    procedure(4)
+    from brain_games.game_seq import play_game
+    play_game('progression')
 
 
 def main():
