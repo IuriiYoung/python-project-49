@@ -1,3 +1,6 @@
+DESCRIPTION = 'What number is missing in the progression?'
+
+
 def create_game():
     import random
     num_1 = random.randint(1, 70)  # create number
@@ -18,39 +21,16 @@ def create_game():
     while k < len(progres):
         string_for_question = string_for_question + ' ' + str(progres[k])
         k = k + 1
-    data_1 = string_for_question, num_6
-    return data_1
-
-
-def create_question(data_1):
-    import prompt
-    print('What number is missing in the progression?')
-    print('Question:' + str(data_1[0]))
-    player_answer = prompt.integer('Your answer: ')
-    data_2 = player_answer, data_1[1]
-    return data_2
-
-
-def evaluate_answer(data_2):
-    if data_2[0] == data_2[1]:
-        print('Correct!')
-        return True
-    else:
-        print(data_2[0], 'is wrong answer ;(. Correct answer was', data_2[1])
-        return False
+    return (string_for_question, str(num_6))
 
 
 def play():
     data_1 = create_game()
-    data_2 = create_question(data_1)
-    data_3 = evaluate_answer(data_2)
-    return data_3
+    return data_1
 
 
 def main():
-    data_1 = create_game()
-    data_2 = create_question(data_1)
-    evaluate_answer(data_2)
+    create_game()
 
 
 if __name__ == '__main__':
