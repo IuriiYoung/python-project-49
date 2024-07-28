@@ -16,12 +16,8 @@ def create_game():
     num_6 = progres[num_5]  # define the value of the excluded number
     progres.pop(num_5)  # exclude the number
     progres.insert(num_5, '..')  # insert the dots
-    string_for_question = ''
-    k = 0
-    while k < len(progres):
-        string_for_question = string_for_question + ' ' + str(progres[k])
-        k = k + 1
-    return (string_for_question, str(num_6))
+    question = ' '.join(str(x) for x in progres)
+    return (question, str(num_6))
 
 
 def play():
