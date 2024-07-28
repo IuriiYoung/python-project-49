@@ -36,8 +36,8 @@ def create_game():
                 continue
         number = number + 1
     correct_answer = str(div_list[0])  # pick up the hihgest divider
-    question = (num_1, num_2)
-    return (question, correct_answer)
+    question = ' '.join((str(num_1), str(num_2)))
+    return question, correct_answer
 
 
 def play():
