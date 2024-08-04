@@ -1,53 +1,37 @@
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
-def create_game_1():
-    import random
-    num_1 = random.randint(1, 100)  # create number
-    num1_list = []  # create 1-st list of dividers
-    div = num_1
-    while div > 0:
-        if num_1 % div == 0:
-            num1_list.append(div)
-            div = div - 1
+def get_dividers(any_num):
+    dividers_list = []
+    divider = any_num
+    while divider > 0:
+        if any_num % divider == 0:
+            dividers_list.append(divider)
+            divider -= 1
         else:
-            div = div - 1
-    num_2 = random.randint(1, 100)  # create number
-    num2_list = []  # create 2-st list of dividers
-    div = num_2
-    while div > 0:
-        if num_2 % div == 0:
-            num2_list.append(div)
-            div = div - 1
-        else:
-            div = div - 1
-    return (num1_list, num2_list, num_1, num_2)
+            divider -= 1
+    return dividers_list
+
+
+def get_gcd(any_list_1, any_list_2):
+    list_item = 0
+    shared_dividers = []
+    while list_item < len(any_list_2):
+        for item in any_list_1:
+            if item == any_list_2[list_item]:
+                shared_dividers.append(item)
+            else:
+                continue
+        list_item += 1
+    return str(shared_dividers[0])  # pick up the hihgest divider
 
 
 def create_game():
-    num1_list, num2_list, num_1, num_2 = create_game_1()
-    number = 0  # create list of equal diveders
-    div_list = []
-    while number < len(num2_list):
-        for item in num1_list:
-            if item == num2_list[number]:
-                div_list.append(item)
-            else:
-                continue
-        number = number + 1
-    correct_answer = str(div_list[0])  # pick up the hihgest divider
-    question = ' '.join((str(num_1), str(num_2)))
+    import random
+    random_num_1 = random.randint(1, 100)
+    random_num_2 = random.randint(1, 100)
+    dividers_list_1 = get_dividers(random_num_1)
+    dividers_list_2 = get_dividers(random_num_2)
+    correct_answer = get_gcd(dividers_list_1, dividers_list_2)
+    question = ' '.join((str(random_num_1), str(random_num_2)))
     return question, correct_answer
-
-
-def play():
-    data_1 = create_game()
-    return data_1
-
-
-def main():
-    create_game()
-
-
-if __name__ == '__main__':
-    main()

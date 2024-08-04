@@ -10,16 +10,3 @@ def create_game():
     else:
         correct_answer = 'no'
     return (question, correct_answer)
-
-
-def play():
-    data_1 = create_game()
-    return data_1
-
-
-def main():
-    create_game()
-
-
-if __name__ == '__main__':
-    main()

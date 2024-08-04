@@ -2,13 +2,13 @@
 
 def play_game(game):
     import prompt
-    import importlib
-    module_1 = ".".join(("brain_games", "games", game))
-    game = importlib.import_module(module_1)
+    # import importlib
+    # module_1 = ".".join(("brain_games", "games", game))
+    import games.even as game_1
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(game.DESCRIPTION,)
+    print(game_1.DESCRIPTION,)
     correct_answers = 0
 
     while correct_answers < 3:
